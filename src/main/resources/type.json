@@ -1,0 +1,82 @@
+[
+  {
+    "icon": "canyin",
+    "typeName": "餐饮",
+    "payType": "1"
+  },
+  {
+    "icon": "fushi",
+    "typeName": "服饰",
+    "payType": "1"
+  },
+  {
+    "icon": "jiaotong",
+    "typeName": "交通",
+    "payType": "1"
+  },
+  {
+    "icon": "riyong",
+    "typeName": "日用",
+    "payType": "1"
+  },
+  {
+    "icon": "gouwu",
+    "typeName": "购物",
+    "payType": "1"
+  },
+  {
+    "icon": "xuexi",
+    "typeName": "学习",
+    "payType": "1"
+  },
+  {
+    "icon": "yiliao",
+    "typeName": "医疗",
+    "payType": "1"
+  },
+  {
+    "icon": "lvxing",
+    "typeName": "旅行",
+    "payType": "1"
+  },
+  {
+    "icon": "renqing",
+    "typeName": "人情",
+    "payType": "1"
+  },
+  {
+    "icon": "qita",
+    "typeName": "其他",
+    "payType": "1"
+  },
+  {
+    "icon": "gongzi",
+    "typeName": "工资",
+    "payType": "2"
+  },
+  {
+    "icon": "jiangjin",
+    "typeName": "奖金",
+    "payType": "2"
+  },
+  {
+    "icon": "zhuanzhang",
+    "typeName": "转账",
+    "payType": "2"
+  },
+  {
+    "icon": "licai",
+    "typeName": "理财",
+    "payType": "2"
+  },
+  {
+    "icon": "tuikuang",
+    "typeName": "退款",
+    "payType": "2"
+  },
+  {
+    "icon": "qita",
+    "typeName": "其它",
+    "payType": "2"
+  }
+]

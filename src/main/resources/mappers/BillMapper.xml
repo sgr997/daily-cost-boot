@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.goku.dailycost.mapper.BillMapper">
+
+    <select id="queryForList" parameterType="top.goku.dailycost.req.BillReq" resultType="top.goku.dailycost.entity.Bill">
+        select *
+        from dc_bill
+        where user_id = #{userId}
+          <if test="typeId!=null">
+              and type_id=#{typeId}
+          </if>
+          <if test="month!=''">
+              and strftime('%Y-%m', `date`/1000, 'unixepoch') = #{month}
+          </if>
+
+    </select>
+</mapper>

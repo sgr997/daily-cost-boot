@@ -1,0 +1,36 @@
+# Tomcat
+server:
+  port: 9001
+#spring
+spring:
+  mvc:
+    pathmatch:
+      # 解决swagger报错
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    #引用项目中的数据库文件
+    driver-class-name: org.sqlite.JDBC
+    # 本地测试时建议使用绝对路径，如果使用以下配置，本地运行时实际读取的是target/classes/db/helloworld.db
+    url: jdbc:sqlite:/Users/zhangxiaopei/IdeaProjects/daily-cost/src/main/resources/db/dailycost.db
+#    url: jdbc:sqlite:/Users/db/helloworld.db
+    username:
+    password:
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mappers/**/*.xml
+#logging:
+#  level:
+#    top:
+#      goku:
+#        hw:
+#          web: error
+#          sdk: debug
+swagger:
+  enable: true
+knife4j:
+  enable: true
+  basic:
+    enable: true
+    username: test
+    password: 123456
