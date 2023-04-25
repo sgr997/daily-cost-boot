@@ -20,5 +20,3 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 定义启动命令
 ENTRYPOINT ["sh","-c","java -jar -Dspring.profiles.active=prod app.jar "]
-
-docker run -itd -p 9001:9001 --restart=always --name=dailycost --privileged=true -v /root/db/dc_prod.db:/opt/dailycost.db registry.cn-hangzhou.aliyuncs.com/zxp_learn/dailycost:0.0.1

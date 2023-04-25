@@ -21,6 +21,7 @@ import top.goku.dailycost.vo.BillVO;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -114,9 +115,10 @@ public class BillServiceImpl extends ServiceImpl<BillMapper, Bill> implements IB
                 byMonth.keySet().stream().map(dayOfMonth -> {
                     BillDayOfMonth.Detail detail = new BillDayOfMonth.Detail();
                     detail.setDate(dayOfMonth);
-                    detail.setBills(bills);
+                    detail.setBills(byMonth.get(dayOfMonth));
                     return detail;
-                }).collect(Collectors.toList()));
+                }).sorted(Comparator.comparing(BillDayOfMonth.Detail::getDate).reversed())
+                        .collect(Collectors.toList()));
         return res;
     }
 }
