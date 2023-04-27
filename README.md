@@ -1,11 +1,13 @@
-# 记账本后端
+# 随记账本后端
 
-[daily-cost](https://github.com/sgr997/daily-cost) 的Java后端实现
+基于Java实现的记账本项目
 
-基础框架：SpringBoot
+- 基础框架：SpringBoot
 
-持久层：MybatisPlus
+- 持久层：MybatisPlus
 
-数据库：Sqlite
+- 数据库：Sqlite
 
-工具类：Hutool
+- 工具类：Hutool
+
+配套前端(Vue3)：https://github.com/sgr997/daily-cost) 
